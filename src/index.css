@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import the font you want */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Oswald:wght@400;476&display=swap');
+
+/* colors */
+:root {
+  --primary-dark: #1d4ddc;
+  --primary-light: #6974eb;
+}
+
+/* smooth scroll */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+body{
+  @apply font-[Barlow]
+}
+
+li{
+  @apply p-4 text-sm
+}
+
+button{
+  @apply rounded-md px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white
+}
+
+h2{
+  @apply text-xl font-bold
+}
+
+input{
+  @apply rounded-[5px]
+}
